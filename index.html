@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖州-南浔-乌镇五日游精致行程表</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23a2d5c6" stroke-width="0.5" stroke-dasharray="5,5"/></svg>');
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(to right, #2c6e49, #4c956c);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: cover;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 15px auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .tabs-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .tabs {
+            display: flex;
+            background: linear-gradient(to right, #5e8d75, #4c956c);
+            overflow-x: auto;
+            padding: 0 15px;
+        }
+        
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 18px 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            white-space: nowrap;
+        }
+        
+        .tab-btn:hover {
+            color: white;
+        }
+        
+        .tab-btn.active {
+            color: white;
+        }
+        
+        .tab-btn.active::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 4px;
+            background: #ffd166;
+            border-radius: 4px 4px 0 0;
+        }
+        
+        .tab-content {
+            padding: 30px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .day-title {
+            color: #2c6e49;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0f0e9;
+            display: flex;
+            align-items: center;
+        }
+        
+        .day-title i {
+            margin-right: 15px;
+            background: #4c956c;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(76, 149, 108, 0.3);
+        }
+        
+        .timeline {
+            list-style: none;
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #a2d5c6, #4c956c);
+            left: 35px;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 80px;
+            animation: slideIn 0.5s ease-out;
+            animation-fill-mode: backwards;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .timeline-icon {
+            position: absolute;
+            left: 25px;
+            top: 15px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #4c956c;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(76, 149, 108, 0.4);
+            z-index: 2;
+        }
+        
+        .time-period {
+            background: #ff6b6b;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+        }
+        
+        .activity-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-header h3 {
+            color: #2c6e49;
+            font-size: 1.4rem;
+        }
+        
+        .card-header i {
+            margin-right: 10px;
+            color: #4c956c;
+            font-size: 1.4rem;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .baby-section {
+            background: #fff9f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #ffb86c;
+        }
+        
+        .baby-section h4 {
+            color: #e67700;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .baby-section h4 i {
+            margin-right: 10px;
+        }
+        
+        .section-divider {
+            text-align: center;
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .section-divider span {
+            background: white;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+            color: #4c956c;
+            font-weight: 600;
+        }
+        
+        .section-divider::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #c1e4d3, transparent);
+            z-index: 1;
+        }
+        
+        .map-container {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .map-header {
+            background: linear-gradient(to right, #5e8d75, #4c956c);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .map-header i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .map-placeholder {
+            height: 300px;
+            background: linear-gradient(45deg, #a2d5c6, #8bc6a8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .map-placeholder::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/></svg>');
+            background-size: 30px 30px;
+        }
+        
+        .map-placeholder p {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        
+        .map-marker {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: #ff6b6b;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+        
+        .map-marker::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            margin-left: -4px;
+            width: 8px;
+            height: 15px;
+            background: #ff6b6b;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+        
+        .map-marker-label {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            z-index: 4;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #5e8d75;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        @media (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+                padding: 0;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                text-align: left;
+                padding: 15px 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .tab-btn.active::after {
+                left: 0;
+                transform: translateX(0);
+                width: 4px;
+                height: 100%;
+                border-radius: 0;
+            }
+            
+            .timeline {
+                padding-left: 0;
+            }
+            
+            .timeline::before {
+                left: 25px;
+            }
+            
+            .timeline-item {
+                padding-left: 70px;
+            }
+            
+            .timeline-icon {
+                left: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>湖州·南浔·乌镇五日游</h1>
+            <p class="subtitle">漫步太湖之滨，感受古镇韵味，体验江南水乡的诗意生活</p>
+            <div class="date-badge">
+                <i class="fas fa-calendar-alt"></i> 行程天数：5天4晚
+            </div>
+        </header>
+        
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-day="day1">第一天：长兴湖滨</button>
+                <button class="tab-btn" data-day="day2">第二天：影视城·湿地</button>
+                <button class="tab-btn" data-day="day3">第三天：环太湖·南浔</button>
+                <button class="tab-btn" data-day="day4">第四天：南浔·乌村</button>
+                <button class="tab-btn" data-day="day5">第五天：返程之旅</button>
+            </div>
+            
+            <!-- Day 1 Content -->
+            <div class="tab-content active" id="day1">
+                <h2 class="day-title"><i class="fas fa-sun"></i>第一天：入住长兴，湖滨漫步</h2>
+                
+                <ul class="timeline">
+                    <li class="timeline-item" style="animation-delay: 0.1s">
+                        <div class="timeline-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="time-period">9:00 - 12:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>集合出发</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>各自出发，中午12点在长兴天籁之梦别墅汇合办理入住</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>出发前喝奶喝足，车内第一觉，配备水果+玩具</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item" style="animation-delay: 0.2s">
+                        <div class="timeline-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="time-period">12:00 - 13:30</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>午餐与周边游览</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>酒店周边，走过月亮桥，渔人码头用餐（备选餐厅：芳满庭）</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>酒店内准备辅食，第一顿在家里做好带着，带着外带餐盒加热，给瑞兹喂辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item" style="animation-delay: 0.3s">
+                        <div class="timeline-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="time-period">13:30 - 16:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>酒店休息活动</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>回酒店休息，可泡自己别墅的私汤，或打牌，或午睡</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>泡一下私汤，酒店儿童区域玩耍，回别墅午睡，醒来喝奶</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item" style="animation-delay: 0.4s">
+                        <div class="timeline-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <div class="time-period">16:00 - 17:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>小梅山散步</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>小梅山散步休闲</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>遛眼户外1小时</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item" style="animation-delay: 0.5s">
+                        <div class="timeline-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="time-period">17:00 - 18:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>晚餐时间</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>渔人码头用餐（备选餐厅：太湖船说私房菜）</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>坐着一起吃第二顿辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item" style="animation-delay: 0.6s">
+                        <div class="timeline-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="time-period">18:00 - 19:30</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>太湖古镇夜景</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>驱车5分钟前往太湖古镇，可以考虑看《醉美太湖》，晚上8点有打铁花表演，晚上9点有烟花（烟花回别墅看）</p>
+                                <p>如果不去太湖古镇，就在南太湖风景区步行游览，如月亮广场、渔人码头</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>游览，散步</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item" style="animation-delay: 0.7s">
+                        <div class="timeline-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="time-period">20:00 - 22:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>晚间休息</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>大家洗澡休息，打牌、聊天</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>哄睡，睡觉中zzzzzz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="map-container">
+                    <div class="map-header">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>第一天行程地图</h3>
+                    </div>
+                    <div class="map-placeholder">
+                        <div class="map-marker" style="top: 30%; left: 20%;">
+                            <div class="map-marker-label">天籁之梦别墅</div>
+                        </div>
+                        <div class="map-marker" style="top: 40%; left: 45%;">
+                            <div class="map-marker-label">渔人码头</div>
+                        </div>
+                        <div class="map-marker" style="top: 60%; left: 70%;">
+                            <div class="map-marker-label">太湖古镇</div>
+                        </div>
+                        <p>长兴天籁之梦别墅 → 渔人码头 → 小梅山 → 太湖古镇</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 2 Content -->
+            <div class="tab-content" id="day2">
+                <h2 class="day-title"><i class="fas fa-cloud-sun"></i>第二天：湖州影视城，湿地之旅</h2>
+                
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <div class="time-period">11:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>集合时间</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>集合时间，集合前大家各自用早餐洗漱</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>早饭喝奶、早餐地方吃点水果、回来宝宝睡醒第一觉</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="time-period">11:00 - 13:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>湖州影视城游览</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>驱车10分钟前往湖州影视城游览</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>宝宝吃辅食，吃不完的放带外带餐盒，米饼，辅食罐</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="time-period">13:00 - 16:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>酒店活动</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>回酒店休息，酒店游泳/泡酒店的月亮温泉，或打牌，或午睡</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>回别墅午睡，醒来喝奶</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="time-period">16:00 - 18:30</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>长田漾湿地公园</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>前往长田漾湿地公园，绝美景色</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>遛眼户外</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="time-period">18:30 - 20:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>晚餐时间</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>渔人码头用餐（备选餐厅：其他餐厅）</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>坐着一起吃辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-hot-tub"></i>
+                        </div>
+                        <div class="time-period">20:00 - 21:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>温泉时间</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>没泡温泉的，可以去泡酒店的月亮温泉</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>哄睡</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="time-period">21:00 - 22:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>晚间休息</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>打牌、聊天、休息</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>睡觉中zzzzzz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="map-container">
+                    <div class="map-header">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>第二天行程地图</h3>
+                    </div>
+                    <div class="map-placeholder">
+                        <div class="map-marker" style="top: 20%; left: 30%;">
+                            <div class="map-marker-label">酒店</div>
+                        </div>
+                        <div class="map-marker" style="top: 40%; left: 50%;">
+                            <div class="map-marker-label">湖州影视城</div>
+                        </div>
+                        <div class="map-marker" style="top: 70%; left: 65%;">
+                            <div class="map-marker-label">长田漾湿地</div>
+                        </div>
+                        <p>酒店 → 湖州影视城 → 长田漾湿地公园 → 渔人码头</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 3 Content -->
+            <div class="tab-content" id="day3">
+                <h2 class="day-title"><i class="fas fa-route"></i>第三天：环太湖驾驶，入住南浔</h2>
+                
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <div class="time-period">11:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>集合时间</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>集合时间，集合前大家各自用早餐洗漱</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>早饭喝奶、早餐地方吃点水果、回来宝宝睡醒第一觉</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="time-period">11:00 - 12:30</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>环太湖之旅</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>退房，驱车沿着环太湖路开，途径：新港口灯塔、湖州小镰仓、太湖猫森林</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>这几个地方都可以下来拍照打卡，顺便喂宝宝辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="time-period">12:30 - 13:30</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>酒店入住</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>酒店checkin，酒店套餐的中餐用饭</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>瑞兹好好吃顿辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <div class="time-period">13:30 - 16:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>酒店活动</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>酒店内休息、恒温泳池游泳、睡午觉，儿童乐园</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>瑞兹玩儿童乐园，睡觉、喝奶</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <div class="time-period">16:00 - 20:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>南浔古镇</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>去南浔古镇游玩吃饭（备选餐厅：星海棠餐厅、忆江南）</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>玩耍，吃第二顿辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="time-period">20:00 - 22:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>晚间休息</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>回酒店休息，洗漱，打牌</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>哄睡</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="map-container">
+                    <div class="map-header">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>第三天行程地图</h3>
+                    </div>
+                    <div class="map-placeholder">
+                        <div class="map-marker" style="top: 25%; left: 25%;">
+                            <div class="map-marker-label">环太湖路</div>
+                        </div>
+                        <div class="map-marker" style="top: 45%; left: 40%;">
+                            <div class="map-marker-label">新港口灯塔</div>
+                        </div>
+                        <div class="map-marker" style="top: 60%; left: 55%;">
+                            <div class="map-marker-label">湖州小镰仓</div>
+                        </div>
+                        <div class="map-marker" style="top: 75%; left: 70%;">
+                            <div class="map-marker-label">南浔古镇</div>
+                        </div>
+                        <p>环太湖路 → 新港口灯塔 → 湖州小镰仓 → 太湖猫森林 → 南浔古镇</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 4 Content -->
+            <div class="tab-content" id="day4">
+                <h2 class="day-title"><i class="fas fa-umbrella-beach"></i>第四天：南浔评弹，乌村风情</h2>
+                
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <div class="time-period">11:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>集合时间</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>集合时间，集合前大家各自用早餐洗漱</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>早饭喝奶、早餐地方吃点水果、回来宝宝睡醒第一觉</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="time-period">11:00 - 14:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>乌村之旅</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>驱车20分钟前往乌村和乌镇科技馆，一些野外活动看动物，看机器人（备选餐厅：乌村找一家）</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>遛娃，辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <div class="time-period">14:00 - 16:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>酒店活动</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>酒店内休息、恒温泳池游泳、睡午觉，儿童乐园</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>瑞兹玩儿童乐园，睡觉、下午喝奶</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="time-period">16:00 - 20:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>南浔古镇</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>再次前往南浔古镇，听听评弹，坐坐乌篷船，在古镇用餐</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>坐船，顺便喂宝宝辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <div class="time-period">20:00 - 22:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>晚间休息</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>回酒店休息，洗漱，打牌</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>哄睡</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="map-container">
+                    <div class="map-header">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>第四天行程地图</h3>
+                    </div>
+                    <div class="map-placeholder">
+                        <div class="map-marker" style="top: 30%; left: 30%;">
+                            <div class="map-marker-label">酒店</div>
+                        </div>
+                        <div class="map-marker" style="top: 50%; left: 55%;">
+                            <div class="map-marker-label">乌村</div>
+                        </div>
+                        <div class="map-marker" style="top: 70%; left: 70%;">
+                            <div class="map-marker-label">南浔古镇</div>
+                        </div>
+                        <p>酒店 → 乌村 → 乌镇科技馆 → 南浔古镇</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 5 Content -->
+            <div class="tab-content" id="day5">
+                <h2 class="day-title"><i class="fas fa-home"></i>第五天：流连忘返，国庆快乐</h2>
+                
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <div class="time-period">11:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>集合时间</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>集合时间，集合前大家各自用早餐洗漱</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>早饭喝奶、早餐地方吃点水果，尽量赶在宝宝睡醒前</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="time-period">11:00 - 12:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>返程之旅</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>退房，返回上海，驱车回家，途径浙北桃花岛（约1小时）下来宝宝休息</p>
+                                
+                                <div class="baby-section">
+                                    <h4><i class="fas fa-baby"></i>瑞兹安排</h4>
+                                    <p>宝宝在车上睡觉1小时，睡醒了在吃饭的地方吃辅食</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div class="time-period">13:00 - 14:00</div>
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>继续返程</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>继续赶路，各自回到家里</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="map-container">
+                    <div class="map-header">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>第五天行程地图</h3>
+                    </div>
+                    <div class="map-placeholder">
+                        <div class="map-marker" style="top: 30%; left: 30%;">
+                            <div class="map-marker-label">酒店</div>
+                        </div>
+                        <div class="map-marker" style="top: 50%; left: 60%;">
+                            <div class="map-marker-label">浙北桃花岛</div>
+                        </div>
+                        <div class="map-marker" style="top: 70%; left: 85%;">
+                            <div class="map-marker-label">上海</div>
+                        </div>
+                        <p>酒店 → 浙北桃花岛 → 返回上海</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p><i class="fas fa-heart"></i> 精心策划的湖州南浔五日游行程 | 包含宝宝专属安排 | 祝您旅途愉快！</p>
+            <p>© 2023 精致旅游行程设计</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Hide all tab content
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show the corresponding tab content
+                    const day = this.getAttribute('data-day');
+                    document.getElementById(day).classList.add('active');
+                });
+            });
+            
+            // Animate timeline items when they come into view
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            timelineItems.forEach(item => {
+                item.style.animationPlayState = 'paused';
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
